@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'ALLocalizables_Example', :exclusive => true do
+  pod "ALLocalizables", :path => "../"
+end
+
+target 'ALLocalizables_Tests', :exclusive => true do
+  pod "ALLocalizables", :path => "../"
+
+  
+end
