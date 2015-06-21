@@ -9,11 +9,11 @@
 
 Pod::Spec.new do |s|
   s.name             = "ALLocalizables"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "Localize UILabels, UIButtons and more directly through the Interface Builder."
   s.description      = "Localize UILabels, UIButtons and more directly through the Interface Builder."
   s.homepage         = "https://github.com/AvdLee/ALLocalizables"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots      = "http://i2.wp.com/i.stack.imgur.com/XFNl2.png"
   s.license          = 'MIT'
   s.author           = { "Antoine van der Lee" => "contact@avanderlee.com" }
   s.source           = { :git => "https://github.com/AvdLee/ALLocalizables.git", :tag => s.version.to_s }

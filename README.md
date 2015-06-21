@@ -13,6 +13,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 Set the baseclass of your interface UILabel or UIButton to `ALLocalizableLabel` or `ALLocalizableButton` and enter the localization string in the new available property `Localize string`.
 This will update the label directly in the interface builder, based on your localization file. 
 
+![Interface Builder property](web/localized_label.png)
+
 Make sure to enable `Automatically Refresh Views` through the menu: `Editor->Automatically Refresh Views` when you're in the interface builder.
 
 ##### Reference
