@@ -8,7 +8,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-##### Localizable labels directly from the interface builder
+#### Localizable labels directly from the interface builder
 
 Set the baseclass of your interface UILabel or UIButton to `ALLocalizableLabel` or `ALLocalizableButton` and enter the localization string in the new available property `Localize string`.
 This will update the label directly in the interface builder, based on your localization file. 
