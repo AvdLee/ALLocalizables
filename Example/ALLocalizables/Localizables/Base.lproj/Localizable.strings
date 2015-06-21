@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  ALLocalizables
+
+  Created by Antoine van der Lee on 02/06/15.
+  Copyright (c) 2015 ALee. All rights reserved.
+*/
+
+"label_text" = "label test string";
+"button_text" = "button test string";

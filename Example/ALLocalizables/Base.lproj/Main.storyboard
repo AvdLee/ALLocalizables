@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3qN-Vd-Cad">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--ALLocalizables-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController title="ALLocalizables" id="vXZ-lx-hvc" customClass="ViewController" customModule="ALLocalizables_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Localized label:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sk-mu-Dc4">
+                                <rect key="frame" x="257" y="96" width="87" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxk-aS-Y0E" customClass="ALLocalizableLabel" customModule="ALLocalizables">
+                                <rect key="frame" x="263" y="115" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="label_text"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Localized button:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0v-1w-zEn">
+                                <rect key="frame" x="252" y="156" width="97" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzX-KQ-3HW" customClass="ALLocalizableButton" customModule="ALLocalizables">
+                                <rect key="frame" x="261" y="175" width="79" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="button_text"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="n0v-1w-zEn" secondAttribute="centerX" constant="-0.5" id="9DT-rF-gQI"/>
+                            <constraint firstItem="tzX-KQ-3HW" firstAttribute="top" secondItem="n0v-1w-zEn" secondAttribute="bottom" constant="4" id="ToU-Bl-kNX"/>
+                            <constraint firstItem="n0v-1w-zEn" firstAttribute="top" secondItem="zxk-aS-Y0E" secondAttribute="bottom" constant="20" id="X0D-c7-cby"/>
+                            <constraint firstAttribute="centerX" secondItem="zxk-aS-Y0E" secondAttribute="centerX" id="hcr-gX-eBo"/>
+                            <constraint firstAttribute="centerX" secondItem="3Sk-mu-Dc4" secondAttribute="centerX" id="rgN-zG-Nfa"/>
+                            <constraint firstAttribute="centerX" secondItem="tzX-KQ-3HW" secondAttribute="centerX" id="sBS-vw-T2E"/>
+                            <constraint firstItem="3Sk-mu-Dc4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="32" id="wKZ-7Y-aOw"/>
+                            <constraint firstItem="zxk-aS-Y0E" firstAttribute="top" secondItem="3Sk-mu-Dc4" secondAttribute="bottom" constant="4" id="xvi-IR-1Ke"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DWx-f8-RTE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="372"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Fg-lK-Ukh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3qN-Vd-Cad" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iut-Dw-L3r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="yTe-hN-BG8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1c-b3-8BO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="1033"/>
+        </scene>
+    </scenes>
+</document>
