@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.name             = "ALLocalizables"
   s.version          = "1.0.0"
   s.summary          = "Localize UILabels, UIButtons and more directly through the Interface Builder."
-  s.description      = "Localize UILabels, UIButtons and more directly through the Interface Builder."
+  s.description      = "Localize UILabels, UIButtons and more directly through the Interface Builder using a new available property 'Localize string'."
   s.homepage         = "https://github.com/AvdLee/ALLocalizables"
   s.screenshots      = "http://i2.wp.com/i.stack.imgur.com/XFNl2.png"
   s.license          = 'MIT'
