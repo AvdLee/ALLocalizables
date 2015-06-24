@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-@IBDesignable class ALLocalizableButton: UIButton {
+@IBDesignable public class ALLocalizableButton: UIButton {
     
-    @IBInspectable var localizeString:String = "" {
+    @IBInspectable public var localizeString:String = "" {
         didSet {
             #if TARGET_INTERFACE_BUILDER
                 let bundle = NSBundle(forClass: self.dynamicType)
@@ -23,7 +23,7 @@ import UIKit
         }
     }
     
-    override func setTitle(title: String?, forState state: UIControlState) {
+    override public func setTitle(title: String?, forState state: UIControlState) {
         
         #if TARGET_INTERFACE_BUILDER
             let bundle = NSBundle(forClass: self.dynamicType)
