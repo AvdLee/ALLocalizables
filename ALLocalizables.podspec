@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ALLocalizables"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "Localize UILabels, UIButtons and more directly through the Interface Builder."
   s.description      = "Localize UILabels, UIButtons and more directly through the Interface Builder using a new available property 'Localize string'."
   s.homepage         = "https://github.com/AvdLee/ALLocalizables"
@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/AvdLee/ALLocalizables.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/twannl'
 
-  s.platform     = :ios, '8.0'
+  s.ios.deployment_target = '8.0'
+  s.tvos.deployment_target = '9.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
