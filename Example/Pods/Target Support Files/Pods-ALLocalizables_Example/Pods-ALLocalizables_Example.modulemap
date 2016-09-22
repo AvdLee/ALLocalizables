@@ -1,6 +1,0 @@
-framework module Pods_ALLocalizables_Example {
-  umbrella header "Pods-ALLocalizables_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

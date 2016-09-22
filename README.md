@@ -1,8 +1,10 @@
 # ALLocalizables
 
 [![Version](https://img.shields.io/cocoapods/v/ALLocalizables.svg?style=flat)](http://cocoapods.org/pods/ALLocalizables)
+[![Language](https://img.shields.io/badge/language-swift2.3-f48041.svg?style=flat)](https://developer.apple.com/swift)
 [![License](https://img.shields.io/cocoapods/l/ALLocalizables.svg?style=flat)](http://cocoapods.org/pods/ALLocalizables)
 [![Platform](https://img.shields.io/cocoapods/p/ALLocalizables.svg?style=flat)](http://cocoapods.org/pods/ALLocalizables)
+[![Twitter](https://img.shields.io/badge/twitter-@twannl-blue.svg?style=flat)](http://twitter.com/twannl)
 
 ## Usage
 
