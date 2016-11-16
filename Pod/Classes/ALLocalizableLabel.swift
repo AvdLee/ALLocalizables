@@ -14,9 +14,9 @@ import UIKit
     @IBInspectable public var localizeString:String = "" {
         didSet {
             #if TARGET_INTERFACE_BUILDER
-                let bundle = NSBundle(forClass: self.dynamicType)
+                let bundle = NSBundle(forClass: type(of: self))
                 self.text = bundle.localizedStringForKey(self.localizeString, value:"", table: nil)
-                #else
+            #else
                 self.text = NSLocalizedString(self.localizeString, comment:"")
             #endif
         }
