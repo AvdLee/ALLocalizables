@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-@IBDesignable public class ALLocalizableLabel: UILabel {
+@IBDesignable open class ALLocalizableLabel: UILabel {
     
-    @IBInspectable public var localizeString:String = "" {
+    @IBInspectable open var localizeString:String = "" {
         didSet {
             #if TARGET_INTERFACE_BUILDER
                 let bundle = NSBundle(forClass: type(of: self))
@@ -22,7 +22,7 @@ import UIKit
         }
     }
     
-    override public func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         self.preferredMaxLayoutWidth = self.frame.size.width
         self.layoutIfNeeded()
