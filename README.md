@@ -1,7 +1,7 @@
 # ALLocalizables
 
 [![Version](https://img.shields.io/cocoapods/v/ALLocalizables.svg?style=flat)](http://cocoapods.org/pods/ALLocalizables)
-[![Language](https://img.shields.io/badge/language-swift2.3-f48041.svg?style=flat)](https://developer.apple.com/swift)
+[![Language](https://img.shields.io/badge/language-swift3.0-f48041.svg?style=flat)](https://developer.apple.com/swift)
 [![License](https://img.shields.io/cocoapods/l/ALLocalizables.svg?style=flat)](http://cocoapods.org/pods/ALLocalizables)
 [![Platform](https://img.shields.io/cocoapods/p/ALLocalizables.svg?style=flat)](http://cocoapods.org/pods/ALLocalizables)
 [![Twitter](https://img.shields.io/badge/twitter-@twannl-blue.svg?style=flat)](http://twitter.com/twannl)
@@ -24,8 +24,8 @@ This project is a result of a StackOverflow post:
 http://stackoverflow.com/a/27418239/1485701
 
 ## Requirements
-- Xcode 6
-- iOS 7.0+
+- Xcode 8
+- iOS 8.0+
 
 ## Installation
 
@@ -35,6 +35,12 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "ALLocalizables"
 ```
+
+#### Swift version vs Pod version
+| Swift version | Pod version    |
+| ------------- | --------------- |
+| 3.X           | >= 3.0.0			|
+| 2.3           | 2.0			   |
 
 ## Author
 

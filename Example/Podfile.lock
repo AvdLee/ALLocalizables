@@ -1,5 +1,5 @@
 PODS:
-  - ALLocalizables (2.0)
+  - ALLocalizables (3.0)
 
 DEPENDENCIES:
   - ALLocalizables (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ALLocalizables: 1d4f48f2f4a12e036c11d2c81fc8e829d6576c68
+  ALLocalizables: 4125a5de0f7ddc7851a0f75f82089015f35e293e
 
-PODFILE CHECKSUM: b28d105af728d0a465a9ac8e086ba4c8ade9ce7a
+PODFILE CHECKSUM: 0f1e104a40599e1884cbdf65151b08f1fb54292b
 
 COCOAPODS: 1.1.1

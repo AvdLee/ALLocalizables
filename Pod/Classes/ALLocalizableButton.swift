@@ -14,22 +14,21 @@ import UIKit
     @IBInspectable public var localizeString:String = "" {
         didSet {
             #if TARGET_INTERFACE_BUILDER
-                let bundle = NSBundle(forClass: self.dynamicType)
+                let bundle = NSBundle(forClass: type(of: self))
                 self.setTitle(bundle.localizedStringForKey(self.localizeString, value:"", table: nil), forState: UIControlState.Normal)
                 #else
                 
-                self.setTitle(NSLocalizedString(self.localizeString, comment:""), forState: UIControlState.Normal)
+                self.setTitle(NSLocalizedString(self.localizeString, comment:""), for: UIControlState.normal)
             #endif
         }
     }
     
-    override public func setTitle(title: String?, forState state: UIControlState) {
-        
+    public override func setTitle(_ title: String?, for state: UIControlState) {
         #if TARGET_INTERFACE_BUILDER
-            let bundle = NSBundle(forClass: self.dynamicType)
+            let bundle = NSBundle(forClass: type(of: self))
             super.setTitle(bundle.localizedStringForKey(self.localizeString, value:"", table: nil), forState: UIControlState.Normal)
             #else
-            super.setTitle(title, forState: state)
+            super.setTitle(title, for: state)
         #endif
     }
     
